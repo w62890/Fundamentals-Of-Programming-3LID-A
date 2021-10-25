@@ -9,7 +9,7 @@ namespace Lab4_09_11_2020
     {
         static void Main(string[] args)
         {
-            Ex3b();
+            Ex3b();     // Naming!
         }
 
         public static double Median(int[] arr)
@@ -36,7 +36,7 @@ namespace Lab4_09_11_2020
 
         public static double StdDev(int[] arr)
         {
-            double avg = arr.Average();
+            var avg = arr.Average();
             return Math.Sqrt(arr.Average(v => Math.Pow(v - avg, 2)));
         }
 
@@ -45,7 +45,7 @@ namespace Lab4_09_11_2020
             Console.WriteLine("Enter the size of array");
             var N = Convert.ToInt32(Console.ReadLine());
 
-            int[] arr = new int[N];
+            var arr = new int[N];
 
             for (int i = 0; i < arr.Length; i++)
             {
